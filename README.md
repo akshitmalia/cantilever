@@ -1,44 +1,60 @@
-# E-commerce Web Scraper with Search UI
+# Cantilever Cybersecurity Internship Tasks
 
-This project scrapes book data from [books.toscrape.com](http://books.toscrape.com) and displays it using a Flask web interface with search functionality.
+This repository contains two completed tasks as part of the Cantilever internship in the field of Cybersecurity.
 
-##  Features
-- Scrapes book **Title, Price, Rating**
-- Saves data into `books.csv`
-- Search bar to filter books by title
-- Flask-based user interface
-- Clean, tabular display with dynamic filtering
+## Task 1: Web Scraper with Flask Interface
 
-##  Technologies Used
+This project scrapes book data from a test e-commerce website and displays it using a web interface with search functionality.
+
+### Features
+- Scrapes book title, price, and rating
+- Saves data into a CSV file (`books.csv`)
+- Web UI built using Flask and HTML
+- Real-time search bar to filter results by title
+
+### Technologies Used
 - Python 3.13
 - Requests
 - BeautifulSoup4
 - Pandas
 - Flask
 
-##  Project Structure
-```
-cantilever_webscraper/
-├── books.csv
-├── scraper.py
-├── app.py
-├── templates/
-│   └── index.html
-├── static/
-└── venv/ (not pushed to GitHub)
-```
-
-##  How to Run
-1. Run the scraper:
-   ```
-   python scraper.py
-   ```
+### How to Run
+1. Run the scraper script:
 2. Start the Flask server:
-   ```
-   python app.py
-   ```
-3. Visit `http://127.0.0.1:5000/` in your browser
+3. Open your browser and go to:
+     http://127.0.0.1:5000/
 
-##  Note
-This project is part of my internship with **Cantilever Labs** under the Cybersecurity domain.
+
+
+---
+
+## Task 2: Keylogger with Screenshot Capture
+
+This Python script logs all keystrokes and captures screenshots at regular intervals. Both logs and screenshots are saved in a timestamped folder.
+
+### Features
+- Logs every key pressed into `keystrokes.txt`
+- Takes screenshots every 10 seconds
+- Uses multithreading for parallel execution
+- Cleanly exits with Ctrl + C
+
+### Technologies Used
+- Python 3.13
+- pynput
+- pyautogui
+- threading
+- datetime
+- time
+- os
+
+### How to Run
+1. Open terminal and activate the Python environment
+2. Run the script:
+     python keylogger.py
+3. The script will begin logging keystrokes and capturing screenshots every 10 seconds
+4. To stop the script, press:
+     Ctrl + C
+
+
 
